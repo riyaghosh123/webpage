@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   /* body {
+    /* font-family: cursive; */
+    /* body{
+        background-image: url('img2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    } */
+    header{
+        background: #FFFFFF;
+    }
+    .img1{
+        
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+    .search{
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
+       
+        width: 340px;
+        height: 42px;
+       
+        padding-left: 10px;
+        border-radius: 21px;
+        margin-bottom: 14px;
+        background-color: #F2F2F2;
+    }
+    h4{
+        font-family: IBM Plex Sans;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #5C5C5C;
+
+    }
+    .Create{
+        
+        margin-right: 98px;
+        margin-top: 27px;
+        margin-bottom: 24px;
+        display: flex;
+        justify-content: space-between;
+        
+
+        
+    }
+    .Create a{
+        text-decoration: none;
+    }
+    .Create img{
+        width: 24px;
+        height: 24px;
+
+
+    }
+    h3{
+        
+
+        font-family: IBM Plex Sans;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: right;
+        color: #2E2E2E;
+
+    }
+    h2{
+        
+
+
+        font-family: IBM Plex Sans;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: right;
+        color: aqua;
+
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+        width: 1340px;
+        height: 72px;
+        margin: 0 auto;
+        align-items: center;
+        padding-left: 72px;
+        padding-top: 24px;
+        background-color: #FFFFFF;
+       
+        
+        /* position: absolute; */
+    }
+    /* li{
+        display: inline-block;
+    }
+    li div{
+        text-decoration: none;
+    } */
+   /* .container1{
+    
+    width: 378px;
+    height: 47px;
+    margin-top: 400px;
+    margin-left: 200px;
+   } */
+   .container1{
+    position: relative;
+   }
+   .text{
+    position: absolute;
+    top: 60%;
+    padding-left: 100px;
+   }
+   .container1 img{
+     width: 1440px;
+    height: 440px;
+    top: 72px;
+
+
+   }
+   .container1 h3{
+    color: #FFFFFF;
+    font-family: IBM Plex Sans;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: left;
+
+   }
+   .container1 p{
+    color: #FFFFFF;
+    font-family: IBM Plex Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+
+   }
+   .hr{
+    width: 95%;
+    height: 3px;
+    border: 0 none;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15px;
+    background-color: #E0E0E0;
+   }
+   .container2{
+   
+    /* margin-top: 22px; */
+    height: 1850px;
+    width: 100%;
+   }
+   .content{
+   
+    width: 1060px;
+    margin-left: 270px;
+    height: 50px;
+    margin-top: 10px;
+    display: flex;
+   }
+   .link{
+    
+    margin-left: 20px;
+    margin-top: 5px;
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #8A8A8A;
+
+   }
+   .content2{
+   
+    margin-left: 350px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+   }
+   .content2a{
+    display: flex;
+    margin-top: 2px;
+    width: 123px;
+    height: 36px;
+    top: 552px;
+    left: 966px;
+    border-radius: 4px;
+    background-color: #EDEEF0;
+    align-items: center;
+    padding-left: 5px;
+    justify-content: center;
+    color: #000000;
+    margin-left: 500px;
+   
+
+   }
+   .content2b{
+    display: flex;
+    margin-top: 2px;
+    width: 123px;
+    height: 36px;
+    top: 552px;
+    left: 966px;
+    border-radius: 4px;
+    background-color: #EDEEF0;
+    align-items: center;
+    padding-left: 5px;
+    justify-content: center;
+    background-color: #2F6CE5;
+
+   }
+   .para2{
+    margin-right: 4px;
+   }
+   .hr1{
+    
+    width: 93px;
+    height: 1px;
+    border: 1px;
+    margin-right: auto;
+    margin-left: 290px;
+    margin-top: 0px;
+    background-color: #000000;
+   }
+   .hr2{
+    width: 90%;
+    height: 1px;
+    border: 0 none;
+    margin-right: auto;
+    margin-left: 290px;
+    margin-top: o;
+    background-color: #E0E0E0;
+   }
+   .container3{
+    width: 692px;
+    height: 472px;
+    margin-top: 30px;
+    margin-left: 290px;
+    border-radius: 4px;
+    border: 1px;
+    border: solid #E0E0E0;
+
+   }
+   .Article{
+    width: 80px;
+    height: 25px;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-family: IBM Plex Sans;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+    }
+    .para3{
+        width: 600px;
+        height: 60px;
+        margin-left: 20px;
+        font-family: IBM Plex Sans;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #000000;
+        margin-top: 10px;
+
+    }
+    .content3{
+        display: flex;
+    }
+    .imgmore{
+        width: 28px;
+        height: 28px;
+        margin-left: 20px;
+        margin-top: 15px;
+
+    }
+    .content4{
+        width: 652px;
+        height: 25px;
+        margin-top: 10px;
+        margin-left: 20px;
+        font-family: IBM Plex Sans;
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 25px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #5C5C5C;
+
+
+
+    }
+    .content5{
+       
+        width: 652px;
+        height: 60px;
+        margin-left: 20px;
+        margin-top: 25px;
+        display: flex;
+    }
+    .content5a{
+        display: flex;
+        justify-content: space-between;
+    }
+    .content5a img{
+        width: 48px;
+        height: 48px;
+      
+        border-radius: 24px;
+
+    }
+    .para4{
+        margin-top: 15px;
+        margin-left: 10px;
+        font-family: IBM Plex Sans;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #000000;
+        width: 150px;
+        
+
+    }
+    .content5b{
+        
+        width: 250px;
+        height: 48px;
+        margin-left: 270px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    .imga{
+        position: relative;
+    }
+    .imgb{
+        position: absolute;
+        width: 10px;
+        height: 10px;
+
+
+    }
+    .content5b img{
+        width: 64px;
+        height: 64px;
+
+
+        margin-top: 10px;
+        /* margin-right: 10px; */
+        margin-left: 130px;
+
+
+    }
+    .para6{
+        width: 69px;
+        height: 18px;
+        font-family: IBM Plex Sans;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: right;
+        margin-right: 65px;
+        margin-top: 10px;
+        color: #525252;
+        
+
+
+    }
+    .container4{
+        width: 692px;
+        height: 472px;
+        margin-top: 30px;
+        margin-left: 290px;
+        border-radius: 4px;
+        border: 1px;
+        border: solid #E0E0E0;
+    }
+    .container5{
+        width: 692px;
+        height: 472px;
+        margin-top: 30px;
+        margin-left: 290px;
+        border-radius: 4px;
+        border: 1px;
+        border: solid #E0E0E0;
+    }
+    .calander{
+        display: flex;
+        margin-top: 3px;
+       
+    }
+    .calander1{
+        display: flex;
+    }
+    .list1{
+        
+        width: 142px;
+        height: 20px;
+        font-family: IBM Plex Sans;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-left: 5px;
+        color: #000000;
+
+    }
+    .calander2{
+        display: flex;
+        width: 200px;
+    }
+    .calander2 img{
+        width: 20px;
+        height: 20px;
+        color: #000000;
+        margin-left: 5;
+
+
+    }
+    .list2{
+        width: 128px;
+        height: 20px;
+        
+
+
+    }
+    .visit{
+        width: 652px;
+    height: 38px;
+   
+    border-radius: 8px;
+    border: 0.7px;
+   
+    margin-top: 10px;
+    border: solid #A9AEB8;
+
+    }
+    .visit1{
+        width: 150px;
+        height: 38px;
+        margin-left: 260px;
+        margin-top: 4px;
+        font-family: IBM Plex Sans;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #E56135;
+
+
+
+    }
+   
+   .container6{
+    width: 692px;
+    height: 472px;
+    margin-top: 30px;
+    margin-left: 290px;
+    border-radius: 4px;
+    border: 1px;
+    border: solid #E0E0E0;
+
+   }
+   .maincon{
+    height: 1850px;
+   }
+   .main2{
+    display: flex;
+   }
+   .im{
+    display: flex;
+    margin-top: 5px;
+   }
+   .div1{
+
+    width: 250px;
+    margin-left: 70px;
+    margin-top: 70px;
+   }
+   .form{
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 90px;
+
+   }
+   .form2{
+    width: 16px;
+    height: 16px;
+
+    opacity: 0.5px;
+    display: flex;
+    
+
+   }
+   .form3{
+    width: 400px;
+    font-family: IBM Plex Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 5px;
+    color: #000000;
+
+   }
+   .circle img{
+    width: 54px;
+    height: 54px;
+    margin-left: 50px;
+
+   }
+    </style> 
+
+</head>
+<body>
+    <header style="width: 1340px;">
+        <div class="container">
+            <div class="img1">
+                <img src="whole.png" alt="" srcset="" height="20px" >
+            </div>
+            
+            <div class="search">
+                <div><img src="search.svg" alt="" height="22px" width="20px"></div>
+                <div><h4>Search for your favourite groups in ATG</h4></div>
+            </div>
+            <div class="Create">
+                <div>
+                    <a href="create.html"><h3>Create account.</h3></a>
+                </div>
+                <div>
+                    <h2> It's free!</h2>
+                </div>
+                <img src="arrow1.jpg" alt="" sizes="" srcset="">
+            </div>
+                    
+             
+        </div>
+       
+       
+       
+        
+    </header>
+    <div class="container1">
+        <img src="img2.jpg" alt="">
+        <div class="text">
+            <h3>Computer Engineering</h3>
+            <p>142,765 Computer Engineers follow this</p>
+        </div>
+        
+    </div>
+    <hr class="hr">
+    <div class="container2">
+        <div class="content">
+            <div class="link" style="color: #212529;">Posts(368)</div>
+            <!-- <div class="link">Article</div>
+            <div class="link">Event</div>
+            <div class="link">Education</div>
+            <div class="link">Job</div> -->
+            <!-- <div class="content2"> -->
+                <div class="content2a">
+                    <div class="para1"><img src="Filter_ All.svg" alt="" srcset=""></div>
+                    <div><img src="arrow.png" alt="" srcset=""></div>
+                </div>
+                <!-- <div class="content2b">
+                    <div class="para2"><img src="group.png" alt="" srcset=""></div>
+                    <div>Join Group</div>
+                </div> -->
+            <!-- </div> -->
+        </div>
+        <hr class="hr1">
+        <hr class="hr2"> 
+        <div class="maincon">
+            <div class="main2">
+                <div class="container3">
+                    <img src="img1.jpg" alt="" srcset="" width="687px" height="220px">
+                    <div class="Article">✍️ Article</div>
+                    <div class="content3">
+                        <div class="para3">What if famous brands had regular fonts? Meet <br>RegulaBrands!</div>
+                        <div class="imgmore"><img src="more.svg" alt="" srcset=""></div>
+                        
+                    </div>
+                    <div class="content4">I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</div>
+                    <div class="content5">
+                        <div class="content5a">
+                            <img src="Rectangle 3 (1).png" alt="" srcset="">
+                            <div class="para4">Sarthak Kamra</div>
+                            
+                        </div>
+                        <div class="content5b">
+                           
+                            
+                            <!-- <div class="img2"> -->
+                                <img class="imga" src="Circle.svg" alt="" srcset="">
+                                <img class="imgb" src="edit_24px.svg" alt="" srcset="">
+                                
+                                
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="div1">
+                    <div class="im">
+                        <div style="display: flex;"><img src="outline-location_on-24px 2.svg" alt="" srcset="">
+                            <div class="form" style="color: #000000;">Noida, India</div>
+                        </div>
+                        <div style="margin-left: 70px"><img src="baseline-edit-24px.svg" alt="" srcset=""></div>
+                    </div>
+                    <div style="margin-top: 23px;" class="div2">
+                        
+                            <img src="baseline-error_outline-24px.svg" alt="" srcset="">
+                            <div class="form3">Your location will help us serve better <br> and extend a personalised experience.</div>
+                        
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
